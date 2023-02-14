@@ -1,0 +1,46 @@
+<html>
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>BMIの計算</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>price</th>
+            </tr>
+        </thead>
+        <tbody id = "tb">
+        </tbody>
+    </table>
+    <script>
+        js = [
+            {id:1,name:"りんご",price:100},
+            {id:2,name:"みかん",price:200},
+            {id:3,name:"とまと",price:300}
+        ];
+        var tb = document.getElementById("tb");
+        var tr;
+        var td;
+
+        js.forEach(element => {
+            tr = document.createElement("tr");
+            td = document.createElement("td");
+            td.innerHTML = element.id;
+            tr.appendChild(td);
+            td = document.createElement("td");
+            td.innerHTML = element.name;
+            tr.appendChild(td);
+            td = document.createElement("td");
+            td.innerHTML = element.price;
+            tr.appendChild(td);
+            tb.appendChild(tr);
+        });
+
+    </script>
+</body>
