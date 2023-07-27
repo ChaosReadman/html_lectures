@@ -26,7 +26,7 @@ $cf{chat_title} = "Chat Room";
 $cf{maxlog} = 30;
 
 # 戻り先のURL (http://から記述してもよい)
-$cf{homepage} = '../simplebbs.html';
+$cf{homepage} = '../../simplebbs.html';
 
 # スクリプト名 (この掲示板のファイル名)
 $cf{chat_cgi} = "./windy.cgi";
